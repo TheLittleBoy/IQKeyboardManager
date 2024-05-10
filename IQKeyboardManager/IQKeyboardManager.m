@@ -1330,7 +1330,7 @@ NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
 
                 //Restoring
                 CGRect rect = strongRootController.view.frame;
-                rect.origin = strongSelf.topViewBeginOrigin;
+                rect.origin.y = strongSelf.topViewBeginOrigin.y;
                 strongRootController.view.frame = rect;
 
                 strongSelf.movedDistance = 0;
